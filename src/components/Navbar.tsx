@@ -7,7 +7,7 @@ function Navbar() {
 
     return (
         // 'top-0' ensures the sticky element sticks to the very top
-        <nav className='bg-white w-full shadow-xl sticky top-0 z-50'>
+        <nav className='bg-white w-full shadow-xl  shadow-gray-400/50  sticky top-0 z-50'>
             <div className='flex items-center justify-between px-4'>
 
                 <img className='w-40 p-5' src={logo} alt='fratelloLogo' />
