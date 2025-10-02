@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 // Assuming 'logo' is imported correctly
-import logo from "../assets/FratelloLogoFullBlack.png"
+import logo from "../assets/FratelloLogoblack.png"
 function Navbar() {
     // 1. Define state to manage the menu's open/close status
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         // 'top-0' ensures the sticky element sticks to the very top
-        <nav className='bg-white w-full shadow-xl  shadow-gray-400/50  sticky top-0 z-50'>
+        <nav className='bg-white w-full shadow-xl  shadow-gray-600/50  sticky top-0 z-50'>
             <div className='flex items-center justify-between px-4'>
 
-                <img className='w-40 p-5' src={logo} alt='fratelloLogo' />
+                <img className='w-20 p-5' src={logo} alt='fratelloLogo' />
 
                 <button
-                    className='md:hidden p-3 rounded focus:outdivne-none focus:ring-2 focus:ring-gray-600'
+                    className='md:hidden p-3 rounded focus:outdivne-none focus:ring-2 focus:ring-gray-400'
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <svg
@@ -41,22 +41,22 @@ function Navbar() {
                 >
                     <div className="py-1 group cursor-pointer">
                         Home
-                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
 
                     <div className="py-1 group cursor-pointer">
                         Products
-                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
 
                     <div className="py-1 group cursor-pointer">
                         About
-                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
 
                     <div className="py-1 group cursor-pointer">
                         Contact
-                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
                 </div>
 

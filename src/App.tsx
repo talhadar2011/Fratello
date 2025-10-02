@@ -7,7 +7,10 @@ function App() {
     <>
      <Navbar/>
      <Hero/>
-    
+
+
+
+
 
     </>
   )
