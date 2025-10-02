@@ -1,21 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react';
+// Assuming 'logo' is imported correctly
 import logo from "../assets/FratelloLogoFullBlack.png"
-export default function Navbar() {
-    return (
-        <>
-            <nav className='bg-white w-auto  shadow-xl sticky'>
-                <div className='flex items-center justify-around'>
-                    <img className='w-40 p-5 ' src={logo} alt='fratelloLogo'></img>
-                    <div className='flex gap-6 mx-auto font-medium'>
-                        <h4 className='text-lg hover:underline cursor-pointer'>Home</h4>
-                        <h4 className='text-lg hover:underline cursor-pointer'>Products</h4>
-                        <h4 className='text-lg hover:underline cursor-pointer'>AboutUs</h4>
-                        <h4 className='text-lg hover:underline cursor-pointer'>Contact</h4>
+function Navbar() {
+    // 1. Define state to manage the menu's open/close status
+    const [isOpen, setIsOpen] = useState(false);
 
+    return (
+        // 'top-0' ensures the sticky element sticks to the very top
+        <nav className='bg-white w-full shadow-xl sticky top-0 z-50'>
+            <div className='flex items-center justify-between px-4'>
+
+                <img className='w-40 p-5' src={logo} alt='fratelloLogo' />
+
+                <button
+                    className='md:hidden p-3 rounded focus:outdivne-none focus:ring-2 focus:ring-gray-600'
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        {isOpen ? (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                        ) : (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                        )}
+                    </svg>
+                </button>
+
+                <div
+                    className={`
+            ${isOpen ? 'block' : 'hidden'} 
+            absolute top-full left-0 w-full bg-white shadow-md 
+            md:relative md:flex md:w-auto md:shadow-none 
+            flex-col md:flex-row gap-6 mx-auto font-medium p-4 md:p-0
+          `}
+                >
+                    <div className="py-1 group cursor-pointer">
+                        Home
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
 
+                    <div className="py-1 group cursor-pointer">
+                        Products
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                    </div>
+
+                    <div className="py-1 group cursor-pointer">
+                        About
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                    </div>
+
+                    <div className="py-1 group cursor-pointer">
+                        Contact
+                        <hr className="w-3/5 m-auto border-none h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
+                    </div>
                 </div>
-            </nav>
-        </>
-    )
+
+            </div>
+        </nav>
+    );
 }
+
+export default Navbar;
