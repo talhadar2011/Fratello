@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+
 // Assuming 'logo' is imported correctly
 import logo from "../assets/FratelloLogoblack.webp"
+import { Link } from '@tanstack/react-router';
 function Navbar() {
     // 1. Define state to manage the menu's open/close status
     const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +11,9 @@ function Navbar() {
         // 'top-0' ensures the sticky element sticks to the very top
         <nav className='bg-white w-full shadow-xl  shadow-gray-600/50  sticky top-0 z-50'>
             <div className='flex items-center justify-between px-4'>
-
-                <img className='w-20 p-5' src={logo} alt='fratelloLogo' />
+                <Link to='/'>
+                  <img className='w-20 p-5' src={logo} alt='fratelloLogo' />
+                </Link>
 
                 <button
                     className='md:hidden p-3 rounded focus:outdivne-none focus:ring-2 focus:ring-gray-400'
@@ -40,7 +43,7 @@ function Navbar() {
           `}
                 >
                     <div className="py-1 group cursor-pointer">
-                        Home
+                        <Link to='/'>Home</Link>
                         <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
 
@@ -55,7 +58,8 @@ function Navbar() {
                     </div>
 
                     <div className="py-1 group cursor-pointer">
-                        Contact
+                        <Link to='/contact'>Contact</Link>
+                        
                         <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
                 </div>
