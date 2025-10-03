@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Assuming 'logo' is imported correctly
-import logo from "../assets/FratelloLogoblack.png"
+import logo from "../assets/FratelloLogoblack.webp"
 function Navbar() {
     // 1. Define state to manage the menu's open/close status
     const [isOpen, setIsOpen] = useState(false);

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/FratelloLogoFullWhite.png"
+import logo from "../assets/FratelloLogoFullWhite.webp"
 export default function Hero() {
   return (
     <div>
