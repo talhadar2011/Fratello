@@ -48,7 +48,7 @@ function Navbar() {
                     </div>
 
                     <div className="py-1 group cursor-pointer">
-                        Products
+                        <Link to='/product'>Products</Link>
                         <hr className="w-3/5 m-auto border-none h-0.5 bg-indigo-400 transform scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300" />
                     </div>
 
