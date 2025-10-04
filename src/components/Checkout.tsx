@@ -4,7 +4,7 @@ export default function Checkout() {
         <div className='flex  w-auto justify-between mt-10'>
             <div className='flex-col  w-full p-10'>
                 <h1 className='font-bold text-xl'>Contact</h1>
-                
+
                 <div>
                     <h2 className="text-base/7 font-semibold text-black">Personal Information</h2>
                     <p className="mt-1 text-sm/6 text-gray-400">Use a permanent address where you can receive mail.</p>
@@ -74,46 +74,27 @@ export default function Checkout() {
                         </div>
                     </div>
                     <h1 className='font-bold text-xl mt-5'>Shipping Method</h1>
-                    <fieldset>
-                        <legend className="text-sm/6 font-semibold text-gray-900">Push notifications</legend>
-                        <p className="mt-1 text-sm/6 text-gray-600">These are delivered via SMS to your mobile phone.</p>
-                        <div className="mt-6 space-y-6">
-                            <div className="flex items-center gap-x-3">
-                                <input id="push-everything" type="radio" name="push-notifications" checked className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden" />
-                                <label className="block text-sm/6 font-medium text-gray-900">Everything</label>
+
+                    <div className="mt-5" >
+                        <label className="flex items-center justify-between border rounded-t-lg p-3 cursor-pointer border-gray-800/10">
+                            <div className="flex items-center gap-2">
+                                <input type="radio" name="shipping" className="h-4 w-4 " />
+                                <span>Karachi</span>
                             </div>
-                            <div className="flex items-center gap-x-3">
-                                <input id="push-email" type="radio" name="push-notifications" className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden" />
-                                <label className="block text-sm/6 font-medium text-gray-900">Same as email</label>
+                            <span className="font-medium">Rs 200.00</span>
+                        </label>
+                        <label className="flex items-center justify-between border rounded-b-lg p-3 cursor-pointer border-gray-800/10">
+                            <div className="flex items-center gap-2">
+                                <input type="radio" name="shipping" className="h-4 w-4 b
+                                " />
+                                <span>Out of Karachi</span>
                             </div>
-                            <div className="flex items-center gap-x-3">
-                                <input id="push-nothing" type="radio" name="push-notifications" className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden" />
-                                <label className="block text-sm/6 font-medium text-gray-900">No push notifications</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <h1 className='font-bold text-xl mt-5'>Payment Method</h1>
-                    <fieldset>
-                        <legend className="text-sm/6 font-semibold text-gray-900">Push notifications</legend>
-                        <p className="mt-1 text-sm/6 text-gray-600">These are delivered via SMS to your mobile phone.</p>
-                        <div className="mt-6 space-y-6">
-                            <div className="flex items-center gap-x-3">
-                                <input id="push-everything" type="radio" name="push-notifications" checked className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden" />
-                                <label className="block text-sm/6 font-medium text-gray-900">Everything</label>
-                            </div>
-                            <div className="flex items-center gap-x-3">
-                                <input id="push-email" type="radio" name="push-notifications" className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden" />
-                                <label className="block text-sm/6 font-medium text-gray-900">Same as email</label>
-                            </div>
-                            <div className="flex items-center gap-x-3">
-                                <input id="push-nothing" type="radio" name="push-notifications" className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden" />
-                                <label className="block text-sm/6 font-medium text-gray-900">No push notifications</label>
-                            </div>
-                        </div>
-                    </fieldset>
+                            <span className="font-medium">Rs 250.00</span>
+                        </label>
+                    </div>
                 </div>
-                    
-                
+
+
 
             </div>
             <div className='h-auto bg-gray-400 w-full '>RightSide</div>
