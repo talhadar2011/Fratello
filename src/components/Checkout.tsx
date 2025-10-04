@@ -92,6 +92,33 @@ export default function Checkout() {
                             <span className="font-medium">Rs 250.00</span>
                         </label>
                     </div>
+                    <h1 className='font-bold text-xl mt-5'>Payment Method</h1>
+
+                    <div className="mt-5" >
+                        <label className="flex items-center justify-between border rounded-t-lg p-3 cursor-pointer border-gray-800/10">
+                            <div className="flex items-center gap-2">
+                                <input type="radio" name="shipping" className="h-4 w-4 " />
+                                <span>PAYFAST(Pay via Debit/Credit/Wallet/Bank Account)</span>
+                            </div>
+                            <span className="font-medium">Rs 200.00</span>
+                        </label>
+                         <label className="flex items-center justify-between border  p-3 cursor-pointer border-gray-800/10">
+                            <div className="flex items-center gap-2">
+                                <input type="radio" name="shipping" className="h-4 w-4 b
+                                " />
+                                <span>COD (25% adv reqd for custom order only)</span>
+                            </div>
+                            <span className="font-medium">Rs 250.00</span>
+                        </label>
+                        <label className="flex items-center justify-between border rounded-b-lg p-3 cursor-pointer border-gray-800/10">
+                            <div className="flex items-center gap-2">
+                                <input type="radio" name="shipping" className="h-4 w-4 b
+                                " />
+                                <span>Out of Karachi</span>
+                            </div>
+                            <span className="font-medium">Rs 250.00</span>
+                        </label>
+                    </div>
                 </div>
 
 
