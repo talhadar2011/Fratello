@@ -43,7 +43,7 @@ export default function Footer() {
             href="#"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-indigo-400 transition hover:opacity-75"
           >
             <span className="sr-only">Facebook</span>
 
@@ -62,7 +62,7 @@ export default function Footer() {
             href="#"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-indigo-400 transition hover:opacity-75"
           >
             <span className="sr-only">Instagram</span>
 
@@ -81,7 +81,7 @@ export default function Footer() {
             href="#"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-indigo-400 transition hover:opacity-75"
           >
             <span className="sr-only">Twitter</span>
 
@@ -98,7 +98,7 @@ export default function Footer() {
             href="#"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-indigo-400 transition hover:opacity-75"
           >
             <span className="sr-only">GitHub</span>
 
@@ -117,7 +117,7 @@ export default function Footer() {
             href="#"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-indigo-400 transition hover:opacity-75"
           >
             <span className="sr-only">Dribbble</span>
 
