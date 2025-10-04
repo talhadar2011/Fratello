@@ -1,7 +1,7 @@
 
 export default function Checkout() {
     return (
-        <div className='flex  w-auto justify-between mt-10'>
+        <div className='flex justify-between mt-10'>
             <div className='flex-col w-full p-10'>
                 <h1 className='font-bold text-xl'>Contact</h1>
 

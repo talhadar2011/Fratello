@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from "../assets/FratelloLogoFullWhite.webp"
+import { Link } from '@tanstack/react-router'
 export default function Hero() {
   return (
     <div>
-        <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24 ">
+        <section className="bg-gray-900 py-16 md:py-24 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2 mt-10 lg:mt-0">
@@ -29,12 +30,12 @@ export default function Hero() {
             
             {/* Call to Actions */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a 
-                href="/signup" 
-                className="inline-block bg-indigo-400 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105"
+              <Link  to="/product"
+                 
+                className="inline-block  border border-indigo-400 bg-gray-900 hover:bg-indigo-400 text-indigo-400 hover:text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105"
               >
                 Go To Products
-              </a>
+              </Link>
              
             </div>
 
