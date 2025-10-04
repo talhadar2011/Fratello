@@ -2,7 +2,7 @@
 export default function Checkout() {
     return (
         <div className='flex  w-auto justify-between mt-10'>
-            <div className='flex-col  w-full p-10'>
+            <div className='flex-col w-full p-10'>
                 <h1 className='font-bold text-xl'>Contact</h1>
 
                 <div>
@@ -114,15 +114,13 @@ export default function Checkout() {
                             <div className="flex items-center gap-2">
                                 <input type="radio" name="shipping" className="h-4 w-4 b
                                 " />
-                                <span>Out of Karachi</span>
+                                <span>Bank Transfer</span>
                             </div>
                             <span className="font-medium">Rs 250.00</span>
                         </label>
                     </div>
                 </div>
-
-
-
+                <button className="bg-gray-500 hover:bg-gray-800  mt-5 p-5 justify-center rounded-xl text-xl font-bold text-white cursor-pointer w-full">Complete Order</button>                                
             </div>
             <div className='h-auto bg-gray-400 w-full '>RightSide</div>
         </div>
