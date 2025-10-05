@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="lg:w-1/2 mt-10 lg:mt-0">
             {/* Replace this with your actual image component */}
             <img 
-              className="w-100 h-auto "
+              className="w-100 h-auto drop-shadow-md drop-shadow-indigo-400 "
               src={logo} 
               alt="Product Dashboard Screenshot"
               loading="eager" // Important for LCP optimization
